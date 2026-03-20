@@ -1,0 +1,128 @@
+.scd-wrap .scd-card-grid,
+.scd-wrap .scd-courier-grid,
+.scd-wrap .scd-two-column {
+	display: grid;
+	gap: 16px;
+}
+
+.scd-wrap .scd-card-grid {
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	margin: 20px 0;
+}
+
+.scd-wrap .scd-card,
+.scd-wrap .scd-panel {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	padding: 16px;
+	text-decoration: none;
+}
+
+.scd-wrap .scd-card-label {
+	color: #50575e;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.scd-wrap .scd-card-value {
+	color: #1d2327;
+	font-size: 28px;
+}
+
+.scd-wrap .scd-filters,
+.scd-wrap .scd-bulk-bar,
+.scd-wrap .scd-action-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.scd-wrap .scd-form-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+}
+
+.scd-wrap .scd-form-grid .scd-span-2 {
+	grid-column: span 2;
+}
+
+.scd-wrap .scd-form label,
+.scd-wrap .scd-public-form label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+.scd-wrap .scd-form input,
+.scd-wrap .scd-form select,
+.scd-wrap .scd-form textarea,
+.scd-public-wrap .scd-public-form input,
+.scd-public-wrap .scd-public-form select,
+.scd-public-wrap .scd-public-form textarea {
+	width: 100%;
+}
+
+.scd-wrap .scd-two-column {
+	grid-template-columns: 2fr 1fr;
+	align-items: start;
+}
+
+.scd-wrap .scd-history {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.scd-wrap .scd-history li {
+	margin-bottom: 12px;
+}
+
+.scd-wrap .scd-status {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 999px;
+	background: #f0f0f1;
+}
+
+.scd-wrap .priority-urgent {
+	border-left: 4px solid #d63638;
+}
+
+.scd-wrap .priority-normal {
+	border-left: 4px solid #2271b1;
+}
+
+.scd-public-wrap {
+	max-width: 640px;
+}
+
+.scd-public-wrap .scd-message {
+	padding: 12px 16px;
+	margin-bottom: 16px;
+	border-radius: 4px;
+}
+
+.scd-public-wrap .success {
+	background: #edfaef;
+	color: #0a5c1b;
+}
+
+.scd-public-wrap .error {
+	background: #fcf0f1;
+	color: #8a2424;
+}
+
+@media (max-width: 782px) {
+	.scd-wrap .scd-form-grid,
+	.scd-wrap .scd-two-column {
+		grid-template-columns: 1fr;
+	}
+
+	.scd-wrap .scd-form-grid .scd-span-2 {
+		grid-column: auto;
+	}
+}
