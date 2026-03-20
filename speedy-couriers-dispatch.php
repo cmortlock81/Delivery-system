@@ -4,7 +4,7 @@
  * Plugin URI:  https://example.com/speedy-couriers-dispatch
  * Description: Lightweight courier dispatch workflow for Speedy Couriers.
  * Version:     1.0.0
- * Author:      OpenAI
+ * Author:      Mortify
  * Text Domain: speedy-couriers-dispatch
  * Requires PHP: 8.1
  * Requires at least: 6.4
